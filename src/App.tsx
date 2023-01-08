@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Flex } from "rebass";
+import { Header } from "./Components/Header/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Flex
+      sx={{
+        flexDirection: "column",
+        bg: "white", // #F6F6F6 "#FFDEAD"
+        pt: ["15px", "20px", "25px", "45px", 45],
+        color: "#0B132A",
+        fontSize: [13, 16],
+        flex: 1,
+        maxWidth: ["100%", 1440],
+        alignItems: "center",
+        margin: "0 auto",
+        px: ["10px", "20px", "20px", "150px", 150],
+        boxSizing: "border-box",
+      }}
+    >
+      <Header />
+    </Flex>
   );
 }
 
