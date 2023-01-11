@@ -1,4 +1,4 @@
-import { Image, Flex, Text } from "rebass";
+import { Image, Flex, Text, Link as RLink, Box } from "rebass";
 
 import { footerDetails } from "../../MockData/Data";
 import { Link } from "../Common/Link";
@@ -15,8 +15,8 @@ export const Footer: React.FC = () => {
         flexDirection={["column-reverse", "row"]}
         sx={{
           justifyContent: "space-between",
-          py: [60, 130],
-          pt: 170,
+          pb: [60, 80],
+          pt: [140, 150],
           bg: "#F8F8F8",
         }}
       >
@@ -73,6 +73,71 @@ export const Footer: React.FC = () => {
           ))}
         </Flex>
       </Flex>
+      <Box
+        sx={{
+          borderTop: "1px solid #E0E0E0",
+          display: "flex",
+          justifyContent: "center",
+          py: ["14px", "20px", "20px"],
+          bg: "#F8F8F8",
+        }}
+      >
+        <Text
+          fontWeight={400}
+          fontFamily="Plus Jakarta Sans"
+          color="text.primary"
+          fontSize="14px"
+        >
+          Made by
+          <RLink
+            href="https://github.com/AshishBarvaliya"
+            color="text.primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              cursor: "pointer",
+              px: "3px",
+              ":hover": {
+                color: "red",
+                fontWeight: 500,
+              },
+            }}
+          >
+            Ashish
+          </RLink>
+          with
+          <RLink
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://reactjs.org/"
+            color="text.primary"
+            sx={{ cursor: "pointer", px: "3px" }}
+          >
+            React
+          </RLink>
+          &
+          <RLink
+            href="https://rebassjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            color="text.primary"
+            sx={{ cursor: "pointer", px: "3px" }}
+          >
+            Rebass
+          </RLink>
+          . Deployed on
+          <RLink
+            href="https://www.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            color="text.primary"
+            sx={{ cursor: "pointer", px: "3px" }}
+          >
+            Netlify
+          </RLink>
+          .
+        </Text>
+      </Box>
     </Flex>
   );
 };
