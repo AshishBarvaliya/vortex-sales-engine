@@ -23,7 +23,12 @@ export const Header: React.FC = () => {
         lineHeight: "19px",
       }}
     >
-      <Image alt="logo" src="Assets/Logo.png" sx={{ width: 120 }} />
+      <Image
+        alt="logo"
+        src="Assets/Logo.png"
+        href="#"
+        sx={{ width: 120, cursor: "pointer" }}
+      />
       <Flex
         flex={1}
         display={["none !important", "flex !important"]}

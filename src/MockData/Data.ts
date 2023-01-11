@@ -42,21 +42,21 @@ export const cards: PlanCardProps[] = [
 
 export const reviews: ReviewCardProps[] = [
   {
-    image: "https://www.fillmurray.com/100/100",
+    image: "Assets/profile-icon.jpeg",
     name: "Viezh Robert",
     location: "Warsaw, Poland",
     rating: "5",
     message: `“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”.`,
   },
   {
-    image: "https://www.fillmurray.com/100/100",
+    image: "Assets/profile-icon.jpeg",
     name: "Yessica Christy",
     location: "Shanxi, China",
     rating: "4",
     message: `“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.”.`,
   },
   {
-    image: "https://www.fillmurray.com/100/100",
+    image: "Assets/profile-icon.jpeg",
     name: "Kim Young Jou",
     location: "Seoul, South Korea",
     rating: "5",

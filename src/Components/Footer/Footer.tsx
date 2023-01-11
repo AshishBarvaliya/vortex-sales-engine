@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been
           </Text>
-          <Flex mt={30}>
+          <Flex mt={30} sx={{ cursor: "pointer" }}>
             <FaFb /> <FaTwitter /> <FaInstagram />
           </Flex>
           <Text color="#AFB5C0" mt={"5px"}>
