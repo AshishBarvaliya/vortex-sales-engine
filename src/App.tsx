@@ -1,5 +1,6 @@
 import { Flex } from "rebass";
 import { Body } from "./Components/Body/Body";
+import { Footer } from "./Components/Footer/Footer";
 import { Header } from "./Components/Header/Header";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     >
       <Header />
       <Body />
+      <Footer />
     </Flex>
   );
 }
